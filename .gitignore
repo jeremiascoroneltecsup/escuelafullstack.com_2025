@@ -1,0 +1,39 @@
+# Archivos de base de datos (demasiado grandes para GitHub)
+dump.sql
+
+# Filestore de Odoo (archivos adjuntos)
+filestore/
+
+# Volúmenes de Docker
+odoo_db_data/
+odoo_web_data/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Entornos virtuales
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.bak
