@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Somos la plataforma de capacitación más grande de Latinoamérica en Odoo. Más de 150 cursos, clases en vivo y proyectos reales.">
+    <meta name="keywords" content="Odoo, cursos Odoo, capacitación Odoo, ERP, Latinoamérica, plan completo">
+    <title>Escuela FULLSTACK - Plataforma de Capacitación Odoo en Latinoamérica</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <div class="navbar-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="brand-text">FULLSTACK <span class="brand-highlight">TECHNOLOGY SCHOOL</span></span>
+            </div>
+            
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#plan-completo" class="nav-link">Plan Completo Odoo</a>
+                <a href="#precios" class="nav-link">Precios</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            
+            <div class="navbar-actions">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar cursos...">
+                </div>
+                <button class="btn-notification">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="btn-secondary">Ingresar</button>
+                <button class="btn-primary">Regístrate</button>
+            </div>
+            
+            <button class="navbar-toggle" id="navbarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="dots-pattern"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-left" data-aos="fade-right">
+                <div class="badge-satisfaction">
+                    <i class="fas fa-check-circle"></i>
+                    <span>100% SATISFACCIÓN GARANTIZADA</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Somos la plataforma de capacitación más grande de 
+                    <span class="highlight-gradient">Latinoamérica</span> 
+                    en Odoo
+                </h1>
+                
+                <p class="hero-description">
+                    Conviértete en experto de Odoo con nuestro Plan Completo. Más de 150 cursos, 
+                    clases en vivo y proyectos reales para impulsar tu carrera.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn-cta">
+                        <i class="fas fa-rocket"></i>
+                        Conoce nuestros planes
+                    </button>
+                    <button class="btn-outline">
+                        <i class="fas fa-play-circle"></i>
+                        Ver demo
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Cursos disponibles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3000+</span>
+                        <span class="stat-label">Estudiantes activos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfacción</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-right" data-aos="fade-left">
+                <!-- Cubo 3D Interactivo -->
+                <div class="cube-container">
+                    <div class="cube" id="cube3d">
+                        <!-- Cara frontal -->
+                        <div class="cube-face cube-front">
+                            <div class="cube-header">
+                                <h3>PLAN COMPLETO</h3>
+                                <h2>ODOO</h2>
+                            </div>
+                            <div class="cube-modules">
+                                <div class="module-item">
+                                    <i class="fas fa-file-invoice"></i>
+                                    <span>Facturación</span>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Punto de venta</span>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Sitio web</span>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>Comercio electrónico</span>
+                                </div>
+                            </div>
+                            <div class="cube-footer">
+                                <span>Y MÁS...</span>
+                                <p>CURSOS ACTUALIZADOS</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cara derecha -->
+                        <div class="cube-face cube-right">
+                            <div class="cube-modules-vertical">
+                                <div class="module-item-small">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Ventas</span>
+                                </div>
+                                <div class="module-item-small">
+                                    <i class="fas fa-boxes"></i>
+                                    <span>Inventario</span>
+                                </div>
+                                <div class="module-item-small">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span>CRM</span>
+                                </div>
+                                <div class="module-item-small">
+                                    <i class="fas fa-users"></i>
+                                    <span>Empleados</span>
+                                </div>
+                                <div class="module-item-small">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Cara superior -->
+                        <div class="cube-face cube-top">
+                            <div class="cube-top-content">
+                                <i class="fas fa-graduation-cap fa-3x"></i>
+                                <p>APRENDE ODOO</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Cara trasera -->
+                        <div class="cube-face cube-back">
+                            <div class="cube-modules">
+                                <div class="module-item">
+                                    <i class="fas fa-project-diagram"></i>
+                                    <span>Proyecto</span>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-signature"></i>
+                                    <span>Firma</span>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-calculator"></i>
+                                    <span>Contabilidad</span>
+                                </div>
+                                <div class="module-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Hoja de horas</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Cara izquierda -->
+                        <div class="cube-face cube-left">
+                            <div class="cube-modules-vertical">
+                                <div class="module-item-small">
+                                    <i class="fas fa-wrench"></i>
+                                    <span>Studio</span>
+                                </div>
+                                <div class="module-item-small">
+                                    <i class="fas fa-cog"></i>
+                                    <span>Fabricación</span>
+                                </div>
+                                <div class="module-item-small">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Compra</span>
+                                </div>
+                                <div class="module-item-small">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>eLearning</span>
+                                </div>
+                                <div class="module-item-small">
+                                    <i class="fas fa-headset"></i>
+                                    <span>Asistencia</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Cara inferior -->
+                        <div class="cube-face cube-bottom">
+                            <div class="cube-top-content">
+                                <i class="fas fa-code fa-3x"></i>
+                                <p>DOMINA EL ERP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cube-controls">
+                    <button class="cube-btn" data-rotation="front">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button class="cube-btn" data-rotation="pause">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                    <button class="cube-btn" data-rotation="right">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Desliza para explorar</span>
+        </div>
+    </section>
+
+    <!-- Rutas de Especialización -->
+    <section class="specialization" id="especialidades">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Rutas de Especialización</h2>
+                <p class="section-subtitle">Elige el camino para tu próximo salto profesional</p>
+                <a href="#" class="link-arrow">Ver catálogo completo <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="specialization-grid">
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="spec-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desarrollo Fullstack</h3>
+                    <p class="spec-count">120 cursos</p>
+                </div>
+                
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="spec-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Science & IA</h3>
+                    <p class="spec-count">45 cursos</p>
+                </div>
+                
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="spec-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Diseño UX/UI</h3>
+                    <p class="spec-count">32 cursos</p>
+                </div>
+                
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="spec-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Inglés Tech</h3>
+                    <p class="spec-count">15 cursos</p>
+                </div>
+                
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="spec-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>DevOps & Cloud</h3>
+                    <p class="spec-count">28 cursos</p>
+                </div>
+                
+                <div class="spec-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="spec-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Marketing Growth</h3>
+                    <p class="spec-count">50 cursos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Módulos del Plan Completo Odoo -->
+    <section class="modules" id="plan-completo">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Módulos del <span class="highlight-purple">Plan completo</span> <span class="highlight-orange">Odoo</span></h2>
+                <p class="section-subtitle">Domina las herramientas más demandadas del mercado</p>
+            </div>
+            
+            <div class="modules-grid">
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="module-icon blue">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Facturación</h3>
+                    <p>Facturado y pagos</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="module-icon pink">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Contabilidad</h3>
+                    <p>Gestión contable completa</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="module-icon purple">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Inventario</h3>
+                    <p>Control de stock</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="module-icon cyan">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Sitio web</h3>
+                    <p>Creador de sitios web</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="module-icon indigo">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3>Compra</h3>
+                    <p>Gestión de compras</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="module-icon teal">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>eLearning</h3>
+                    <p>Plataforma educativa</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="module-icon green">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Fabricación</h3>
+                    <p>Órdenes de producción</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="module-icon orange">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Studio</h3>
+                    <p>Personalización avanzada</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="module-icon yellow">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Punto de venta</h3>
+                    <p>POS moderno y rápido</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="550">
+                    <div class="module-icon red">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>CRM</h3>
+                    <p>Gestiona tus leads</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="module-icon purple-light">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Empleados</h3>
+                    <p>Gestión de RRHH</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="650">
+                    <div class="module-icon pink-light">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Marketing por correo</h3>
+                    <p>Campañas automatizadas</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="module-icon green-light">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Reclutamiento</h3>
+                    <p>Proceso de contratación</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="750">
+                    <div class="module-icon orange-light">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Ventas</h3>
+                    <p>De cotización a venta</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="module-icon blue-light">
+                        <i class="fas fa-signature"></i>
+                    </div>
+                    <h3>Firma</h3>
+                    <p>Documentos digitales</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="850">
+                    <div class="module-icon red-light">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Proyecto</h3>
+                    <p>Gestión de proyectos</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="module-icon cyan-light">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Comercio electrónico</h3>
+                    <p>Tienda online completa</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="950">
+                    <div class="module-icon teal-light">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Servicio de asistencia</h3>
+                    <p>Tickets de soporte</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="1000">
+                    <div class="module-icon indigo-light">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Hoja de horas</h3>
+                    <p>Control de tiempos</p>
+                </div>
+                
+                <div class="module-card" data-aos="zoom-in" data-aos-delay="1050">
+                    <div class="module-icon green-dark">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Gastos</h3>
+                    <p>Gestión de gastos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes y Precios -->
+    <section class="pricing" id="precios">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Elige tu Plan y <span class="highlight-gradient">empieza hoy</span></h2>
+                <p class="section-subtitle">Plan Individual (1 estudiante)</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-badge">MENSUAL</div>
+                    <h3>Plan Basic</h3>
+                    <p class="pricing-audience">Para 1 estudiante</p>
+                    
+                    <div class="pricing-price">
+                        <span class="currency">S/</span>
+                        <span class="amount">149</span>
+                        <span class="period">/mes</span>
+                    </div>
+                    
+                    <p class="pricing-billing">Cobro mensual recurrente</p>
+                    
+                    <ul class="pricing-features">
+                        <li class="feature-active">
+                            <i class="fas fa-check-circle"></i>
+                            Contenido profesional y actualizado con certificados digitales
+                        </li>
+                        <li class="feature-inactive">
+                            <i class="fas fa-times-circle"></i>
+                            Certificados físicos para las rutas de aprendizaje profesional
+                        </li>
+                        <li class="feature-inactive">
+                            <i class="fas fa-times-circle"></i>
+                            Acceso a las escuelas de Startups, Inglés y liderazgo
+                        </li>
+                        <li class="feature-inactive">
+                            <i class="fas fa-times-circle"></i>
+                            Eventos exclusivos como FULLSTACK Conf
+                        </li>
+                        <li class="feature-inactive">
+                            <i class="fas fa-times-circle"></i>
+                            Descarga contenido en la app móvil
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-pricing">Suscríbete a Plan Basic</button>
+                </div>
+                
+                <div class="pricing-card pricing-featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-badge pricing-badge-special">
+                        <span>PRECIO ESPECIAL</span>
+                    </div>
+                    <div class="pricing-badge-annual">ANUAL</div>
+                    <h3>Plan Expert</h3>
+                    <p class="pricing-audience">Para 1 estudiante</p>
+                    
+                    <div class="pricing-price">
+                        <span class="price-old">S/898</span>
+                        <div class="price-save">Ahorras S/221</div>
+                    </div>
+                    
+                    <div class="pricing-price pricing-price-main">
+                        <span class="currency">S/</span>
+                        <span class="amount">669</span>
+                        <span class="period">/año</span>
+                    </div>
+                    
+                    <p class="pricing-installments">
+                        <i class="fas fa-credit-card"></i>
+                        Paga a 4 cuotas sin intereses de S/168
+                    </p>
+                    
+                    <ul class="pricing-features">
+                        <li class="feature-active">
+                            <i class="fas fa-check-circle"></i>
+                            Contenido profesional y actualizado con certificados digitales
+                        </li>
+                        <li class="feature-active">
+                            <i class="fas fa-check-circle"></i>
+                            Certificados físicos para las rutas de aprendizaje profesional
+                        </li>
+                        <li class="feature-active">
+                            <i class="fas fa-check-circle"></i>
+                            Acceso a las escuelas de Startups, Inglés y liderazgo
+                        </li>
+                        <li class="feature-active">
+                            <i class="fas fa-check-circle"></i>
+                            Eventos exclusivos como FULLSTACK Conf
+                        </li>
+                        <li class="feature-active">
+                            <i class="fas fa-check-circle"></i>
+                            Descarga contenido en la app móvil
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-pricing btn-pricing-featured">Suscríbete a Plan Expert</button>
+                </div>
+            </div>
+            
+            <div class="pricing-info" data-aos="fade-up">
+                <h3>Plan Team y Plan para empresas</h3>
+                <div class="pricing-actions">
+                    <button class="btn-secondary">¡CLIC AQUÍ!</button>
+                    <button class="btn-outline">¡MÁS INFORMACIÓN!</button>
+                </div>
+            </div>
+            
+            <div class="payment-methods" data-aos="fade-up">
+                <div class="payment-icon">
+                    <i class="fab fa-cc-visa"></i>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-cc-mastercard"></i>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-cc-amex"></i>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+                <div class="payment-icon">
+                    <i class="fab fa-cc-diners-club"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lanzamientos de la semana -->
+    <section class="launches">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Lanzamientos de la semana</h2>
+            </div>
+            
+            <div class="launches-grid">
+                <div class="launch-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="launch-badge launch-badge-trend">TENDENCIA</div>
+                    <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500" alt="Master en React 19">
+                    <div class="launch-content">
+                        <span class="launch-level">Avanzado</span>
+                        <span class="launch-rating"><i class="fas fa-star"></i> 4.9</span>
+                        <h3>Master en React 19</h3>
+                        <div class="launch-meta">
+                            <span><i class="fas fa-user"></i> Miguel Ángel</span>
+                            <span><i class="fas fa-clock"></i> 12h 45m</span>
+                        </div>
+                        <button class="btn-launch">VER CURSO →</button>
+                    </div>
+                </div>
+                
+                <div class="launch-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500" alt="Python para Data Science">
+                    <div class="launch-content">
+                        <span class="launch-level">Básico</span>
+                        <span class="launch-rating"><i class="fas fa-star"></i> 4.8</span>
+                        <h3>Python para Data Science</h3>
+                        <div class="launch-meta">
+                            <span><i class="fas fa-user"></i> Laura G.</span>
+                            <span><i class="fas fa-clock"></i> 12h 45m</span>
+                        </div>
+                        <button class="btn-launch">VER CURSO →</button>
+                    </div>
+                </div>
+                
+                <div class="launch-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=500" alt="Sistemas de Diseño UI">
+                    <div class="launch-content">
+                        <span class="launch-level">Intermedio</span>
+                        <span class="launch-rating"><i class="fas fa-star"></i> 4.9</span>
+                        <h3>Sistemas de Diseño UI</h3>
+                        <div class="launch-meta">
+                            <span><i class="fas fa-user"></i> Carlos Design</span>
+                            <span><i class="fas fa-clock"></i> 12h 45m</span>
+                        </div>
+                        <button class="btn-launch">VER CURSO →</button>
+                    </div>
+                </div>
+                
+                <div class="launch-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="launch-badge launch-badge-new">NUEVO</div>
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500" alt="Arquitectura en AWS">
+                    <div class="launch-content">
+                        <span class="launch-level">Avanzado</span>
+                        <span class="launch-rating"><i class="fas fa-star"></i> 5</span>
+                        <h3>Arquitectura en AWS</h3>
+                        <div class="launch-meta">
+                            <span><i class="fas fa-user"></i> Cloud Ninja</span>
+                            <span><i class="fas fa-clock"></i> 12h 45m</span>
+                        </div>
+                        <button class="btn-launch">VER CURSO →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">¿Qué opinan <span class="highlight-coral">nuestros alumnos?</span></h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "El material es práctico y directo al grano. Antes veía Odoo como algo 
+                        complicado, ahora lo manejo con facilidad gracias a su excelente metodología."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Kuai-mare Orion">
+                        <div>
+                            <h4>Kuai-mare Orion</h4>
+                            <p>Alumno FULLSTACK</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Gracias a este plan, logré implementar Odoo en mi empresa sin 
+                        depender de terceros. Muy recomendado."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=33" alt="Jorge Casas">
+                        <div>
+                            <h4>Jorge Casas</h4>
+                            <p>Alumno FULLSTACK</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "No imaginé que en tan poco tiempo iba a entender el backend de 
+                        Odoo. Los bootcamps en vivo son clave."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=68" alt="Jorge Blanco">
+                        <div>
+                            <h4>Jorge Blanco</h4>
+                            <p>Alumno FULLSTACK</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excelente plataforma para aprender Odoo. Los proyectos reales me 
+                        ayudaron muchísimo en mi carrera profesional."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/100?img=59" alt="Héctor Contreras">
+                        <div>
+                            <h4>Héctor Contreras</h4>
+                            <p>Alumno FULLSTACK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ruta del éxito -->
+    <section class="success-path">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Ruta del <span class="highlight-gradient">éxito para ti</span></h2>
+                <p class="section-subtitle">Transforma tu carrera profesional con Odoo</p>
+            </div>
+            
+            <div class="success-grid">
+                <div class="success-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="success-icon purple">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Ruta efectiva de aprendizaje</h3>
+                    <p>Estudia Odoo siguiendo una ruta efectiva de cursos, diseñada para optimizar tu aprendizaje y dominio del sistema.</p>
+                </div>
+                
+                <div class="success-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="success-icon blue">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Trabaja a corto plazo</h3>
+                    <p>Aprende Odoo, uno de los cursos más demandados, y encuentra trabajo de inmediato.</p>
+                </div>
+                
+                <div class="success-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="success-icon pink">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Mejores oportunidades laborales</h3>
+                    <p>Capacítate en Odoo y accede a nuevas oportunidades laborales.</p>
+                </div>
+                
+                <div class="success-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="success-icon green">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Aumenta tus ingresos</h3>
+                    <p>Odoo optimiza tu negocio y te ayuda a incrementar tus ingresos de manera eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Beneficios <span class="highlight-green">para ti</span></h2>
+                <p class="section-subtitle">Todo lo que necesitas para dominar Odoo</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Cursos de Odoo</h3>
+                    <p>Cursos de Odoo, el ERP líder a nivel mundial.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Cursos Recomendados</h3>
+                    <p>Hemos capacitado a más de 3000 alumnos que nos recomiendan</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Acceso a sesiones en vivo</h3>
+                    <p>Solo para los estudiantes donde expondremos proyectos, experiencias y conocimientos.</p>
+                </div>
+                
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Metodología con enfoque práctico</h3>
+                    <p>Cursos desarrollados y aplicados en proyectos reales y casos prácticos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Preguntas <span class="highlight-gradient">Frecuentes</span></h2>
+                <p class="section-subtitle">Resolvemos tus dudas sobre nuestros planes y cursos</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>¿Qué incluye el Plan Completo Odoo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El Plan Completo Odoo incluye acceso a más de 150 cursos especializados en todos los módulos de Odoo, clases en vivo semanales, proyectos reales, certificados digitales y físicos, acceso a la comunidad privada de estudiantes, y soporte directo de instructores expertos. También incluye actualizaciones constantes del contenido y acceso de por vida a los cursos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span>¿Necesito conocimientos previos de programación?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No necesariamente. Tenemos cursos desde nivel básico hasta avanzado. Para módulos funcionales de Odoo (Facturación, Inventario, CRM, etc.) no necesitas programación. Sin embargo, para desarrollo y personalización avanzada, sí es recomendable tener bases de Python y XML. Ofrecemos cursos introductorios para quienes estén empezando.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question">
+                        <span>¿Cuál es la diferencia entre Plan Basic y Plan Expert?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>El Plan Basic (S/149/mes) incluye acceso a cursos y certificados digitales. El Plan Expert (S/669/año) incluye todo lo del Plan Basic más: certificados físicos, acceso a escuelas de Startups e Inglés, eventos exclusivos como FULLSTACK Conf, descarga de contenido en app móvil, y un ahorro de S/221 comparado con el pago mensual. El Plan Expert ofrece 4 cuotas sin intereses de S/168.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question">
+                        <span>¿Los cursos están en español?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, todos nuestros cursos están 100% en español, dictados por instructores latinoamericanos con experiencia real implementando Odoo en empresas de la región. Esto garantiza que el contenido esté adaptado a las necesidades y contexto de Latinoamérica, incluyendo normativas fiscales y casos de uso locales.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <button class="faq-question">
+                        <span>¿Ofrecen certificación oficial de Odoo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrecemos certificados digitales y físicos (en Plan Expert) emitidos por Escuela FULLSTACK que acreditan tu dominio en módulos específicos de Odoo. Si bien no son certificaciones oficiales de Odoo S.A., están respaldados por nuestra comunidad de más de 3000 estudiantes y son reconocidos por empresas que valoran la capacitación práctica. Te preparamos también para obtener certificaciones oficiales si lo deseas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <button class="faq-question">
+                        <span>¿Puedo cancelar mi suscripción en cualquier momento?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, puedes cancelar tu suscripción en cualquier momento sin penalizaciones. Para el Plan Basic mensual, la cancelación es inmediata y no se cobrará el siguiente mes. Para el Plan Expert anual, tienes 7 días de garantía de devolución completa. Después de ese período, el plan continúa hasta el final del año contratado sin renovación automática.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="700">
+                    <button class="faq-question">
+                        <span>¿Hay opciones de pago para empresas?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos planes corporativos (Plan Team y Plan Empresas) con descuentos por volumen, facturación empresarial, onboarding personalizado, y reportes de progreso para equipos. Contáctanos para recibir una cotización personalizada según el número de licencias que necesites. También ofrecemos capacitación in-house y consultoría para implementaciones.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="800">
+                    <button class="faq-question">
+                        <span>¿Qué versión de Odoo enseñan?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nuestros cursos cubren desde Odoo 13 hasta la versión más reciente (actualmente Odoo 17). Nos enfocamos principalmente en las versiones LTS (Long Term Support) y las últimas versiones estables. El contenido se actualiza constantemente con cada nuevo release de Odoo, y los estudiantes activos reciben acceso automático a las actualizaciones sin costo adicional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Classes -->
+    <section class="live-classes">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="live-indicator">
+                    <span class="live-dot"></span>
+                    <span>En vivo ahora mismo</span>
+                </div>
+            </div>
+            
+            <div class="live-grid">
+                <div class="live-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="live-time">18:00 - 20:00</div>
+                    <h3>Implementación Odoo Facturación</h3>
+                    <div class="live-instructor">
+                        <img src="https://i.pravatar.cc/50?img=15" alt="Carlos Pérez">
+                        <div>
+                            <h4>Carlos Pérez</h4>
+                            <p>Odoo Expert</p>
+                        </div>
+                    </div>
+                    <button class="btn-live">Entrar</button>
+                </div>
+                
+                <div class="live-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="live-time">19:30 - 21:00</div>
+                    <h3>Backend Odoo Avanzado</h3>
+                    <div class="live-instructor">
+                        <img src="https://i.pravatar.cc/50?img=27" alt="Ana López">
+                        <div>
+                            <h4>Ana López</h4>
+                            <p>Senior Developer</p>
+                        </div>
+                    </div>
+                    <button class="btn-live">Entrar</button>
+                </div>
+                
+                <div class="live-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="live-time">21:00 - 22:00</div>
+                    <h3>Módulo Inventario Odoo</h3>
+                    <div class="live-instructor">
+                        <img src="https://i.pravatar.cc/50?img=42" alt="Miguel Torres">
+                        <div>
+                            <h4>Miguel Torres</h4>
+                            <p>Odoo Consultant</p>
+                        </div>
+                    </div>
+                    <button class="btn-live">Entrar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ESCUELAS</h3>
+                    <ul>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Implementación Odoo</a></li>
+                        <li><a href="#">Backend con Odoo</a></li>
+                        <li><a href="#">Odoo Funcional</a></li>
+                        <li><a href="#">Desarrollo Móvil</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>FULLSTACK Y COMUNIDAD</h3>
+                    <ul>
+                        <li><a href="#">FULLSTACK Business</a></li>
+                        <li><a href="#">Live Classes</a></li>
+                        <li><a href="#">Lanzamientos</a></li>
+                        <li><a href="#">Trabaja con nosotros</a></li>
+                        <li><a href="#">Podcast</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>RECURSOS</h3>
+                    <ul>
+                        <li><a href="#">Manual de Marca</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Tutoriales</a></li>
+                        <li><a href="#">Documentación Odoo</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>SOPORTE</h3>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                    </ul>
+                    <div class="footer-contact">
+                        <i class="fas fa-phone"></i>
+                        <span>(+51) 952528752</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                </div>
+                
+                <div class="footer-payment">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='32' viewBox='0 0 50 32'><rect width='50' height='32' rx='4' fill='%23fff'/><text x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%231A1F71' font-family='Arial' font-weight='bold' font-size='10'>VISA</text></svg>" alt="Visa">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='32' viewBox='0 0 50 32'><rect width='50' height='32' rx='4' fill='%23EB001B'/><circle cx='20' cy='16' r='10' fill='%23FF5F00'/><circle cx='30' cy='16' r='10' fill='%23F79E1B'/></svg>" alt="Mastercard">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='32' viewBox='0 0 50 32'><rect width='50' height='32' rx='4' fill='%23016FD0'/><text x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Arial' font-weight='bold' font-size='7'>AMEX</text></svg>" alt="American Express">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='32' viewBox='0 0 50 32'><rect width='50' height='32' rx='4' fill='%23003087'/><text x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%2300457C' font-family='Arial' font-weight='bold' font-size='8'>PayPal</text></svg>" alt="PayPal">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='32' viewBox='0 0 50 32'><rect width='50' height='32' rx='4' fill='%230079BE'/><text x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='white' font-family='Arial' font-weight='bold' font-size='7'>Diners</text></svg>" alt="Diners Club">
+                </div>
+                
+                <p class="footer-copyright">
+                    De LATAM <span class="heart">❤️</span> para el mundo<br>
+                    Copyright © Escuela FULLSTACK 2025 - Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante Mentor IA -->
+    <button class="mentor-btn" id="mentorBtn">
+        <i class="fas fa-robot"></i>
+        <span>Mentor IA</span>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
