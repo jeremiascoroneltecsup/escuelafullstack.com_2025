@@ -620,6 +620,106 @@
         </div>
     </section>
 
+    <!-- Nuestros Profesores -->
+    <section class="teachers">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Nuestros profesores son <span class="highlight-green">expertos de la industria</span></h2>
+                <p class="section-subtitle">Aprende de quienes trabajan con Odoo todos los días</p>
+            </div>
+            
+            <div class="teachers-grid">
+                <div class="teacher-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="teacher-image teacher-purple">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Alexander Sánchez">
+                        <div class="teacher-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Alexander Sánchez</h3>
+                        <p class="teacher-role">CEO & Odoo Expert</p>
+                        <div class="teacher-course">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Plan Completo Odoo</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="teacher-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="teacher-image teacher-orange">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400" alt="María González">
+                        <div class="teacher-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>María González</h3>
+                        <p class="teacher-role">Senior Backend Developer</p>
+                        <div class="teacher-course">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Odoo Backend Avanzado</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="teacher-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="teacher-image teacher-cyan">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400" alt="Carlos Mendoza">
+                        <div class="teacher-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Carlos Mendoza</h3>
+                        <p class="teacher-role">Odoo Functional Consultant</p>
+                        <div class="teacher-course">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Implementación Odoo</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="teacher-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="teacher-image teacher-pink">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400" alt="Ana Rodríguez">
+                        <div class="teacher-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Ana Rodríguez</h3>
+                        <p class="teacher-role">Full Stack Developer</p>
+                        <div class="teacher-course">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Desarrollo de Módulos</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Lanzamientos de la semana -->
     <section class="launches">
         <div class="container">
@@ -1082,6 +1182,59 @@
         <i class="fas fa-robot"></i>
         <span>Mentor IA</span>
     </button>
+
+    <!-- Modal Chatbot -->
+    <div class="chatbot-modal" id="chatbotModal">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h3>Fullstack Mentor</h3>
+                        <span class="chatbot-status">
+                            <span class="status-dot"></span>
+                            ONLINE
+                        </span>
+                    </div>
+                </div>
+                <div class="chatbot-actions">
+                    <button class="chatbot-minimize" id="chatbotMinimize">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button class="chatbot-close" id="chatbotClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>¡Hola! Soy tu Mentor Fullstack. 🚀</p>
+                        <p>¿Qué meta profesional quieres alcanzar hoy?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-input-container">
+                <input 
+                    type="text" 
+                    class="chatbot-input" 
+                    id="chatbotInput" 
+                    placeholder="Pregunta sobre cursos o carreras..."
+                    autocomplete="off"
+                />
+                <button class="chatbot-send" id="chatbotSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

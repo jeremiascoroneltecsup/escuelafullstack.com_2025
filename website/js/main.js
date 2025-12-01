@@ -387,33 +387,130 @@ function initAnimations() {
 }
 
 // ========================================
-// MENTOR IA BUTTON
+// MENTOR IA BUTTON & CHATBOT
 // ========================================
 function initMentorButton() {
     const mentorBtn = document.getElementById('mentorBtn');
+    const chatbotModal = document.getElementById('chatbotModal');
+    const chatbotClose = document.getElementById('chatbotClose');
+    const chatbotMinimize = document.getElementById('chatbotMinimize');
+    const chatbotInput = document.getElementById('chatbotInput');
+    const chatbotSend = document.getElementById('chatbotSend');
+    const chatbotMessages = document.getElementById('chatbotMessages');
     
-    if (mentorBtn) {
-        mentorBtn.addEventListener('click', function() {
-            // Aquí puedes integrar un chatbot o modal
-            alert('¡Mentor IA próximamente! 🤖\n\nEsta función estará disponible pronto para ayudarte con tus dudas sobre Odoo.');
-        });
+    if (!mentorBtn || !chatbotModal) return;
+    
+    // Abrir chatbot
+    mentorBtn.addEventListener('click', function() {
+        chatbotModal.classList.add('active');
+        mentorBtn.style.display = 'none';
+        chatbotInput.focus();
+    });
+    
+    // Cerrar chatbot
+    chatbotClose.addEventListener('click', function() {
+        chatbotModal.classList.remove('active');
+        mentorBtn.style.display = 'flex';
+    });
+    
+    // Minimizar chatbot
+    chatbotMinimize.addEventListener('click', function() {
+        chatbotModal.classList.remove('active');
+        mentorBtn.style.display = 'flex';
+    });
+    
+    // Enviar mensaje
+    function sendMessage() {
+        const message = chatbotInput.value.trim();
+        if (!message) return;
         
-        // Efecto de aparecer al hacer scroll
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 500) {
+        // Agregar mensaje del usuario
+        addMessage(message, 'user');
+        chatbotInput.value = '';
+        
+        // Simular respuesta del bot
+        setTimeout(() => {
+            const response = getBotResponse(message);
+            addMessage(response, 'bot');
+        }, 1000);
+    }
+    
+    chatbotSend.addEventListener('click', sendMessage);
+    chatbotInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+    
+    // Agregar mensaje al chat
+    function addMessage(text, sender) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chatbot-message ${sender === 'user' ? 'user-message' : 'bot-message'}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'message-avatar';
+        avatar.innerHTML = sender === 'user' ? '<i class="fas fa-user"></i>' : '<i class="fas fa-robot"></i>';
+        
+        const content = document.createElement('div');
+        content.className = 'message-content';
+        content.innerHTML = `<p>${text}</p>`;
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        
+        chatbotMessages.appendChild(messageDiv);
+        chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+    
+    // Respuestas del bot
+    function getBotResponse(message) {
+        const lowerMessage = message.toLowerCase();
+        
+        if (lowerMessage.includes('odoo') || lowerMessage.includes('curso')) {
+            return '¡Excelente pregunta! 🎓 Nuestro Plan Completo Odoo incluye más de 150 cursos sobre todos los módulos: Facturación, Inventario, CRM, Sitio Web y muchos más. ¿Te gustaría conocer algún módulo en particular?';
+        }
+        
+        if (lowerMessage.includes('precio') || lowerMessage.includes('costo') || lowerMessage.includes('plan')) {
+            return '💰 Tenemos 2 planes:<br>• <strong>Plan Basic</strong>: S/149/mes<br>• <strong>Plan Expert</strong>: S/669/año (ahorras S/221)<br><br>El Plan Expert incluye certificados físicos, eventos exclusivos y más. ¿Quieres más detalles?';
+        }
+        
+        if (lowerMessage.includes('certificado') || lowerMessage.includes('certificación')) {
+            return '📜 ¡Sí! Todos nuestros cursos incluyen certificados digitales. Con el Plan Expert también recibes certificados físicos para las rutas de aprendizaje profesional. Son reconocidos por empresas que valoran la capacitación práctica.';
+        }
+        
+        if (lowerMessage.includes('profesor') || lowerMessage.includes('instructor')) {
+            return '👨‍🏫 Nuestros profesores son expertos con experiencia real implementando Odoo en empresas. Todos trabajan activamente en la industria y comparten casos prácticos del mundo real.';
+        }
+        
+        if (lowerMessage.includes('hola') || lowerMessage.includes('buenos') || lowerMessage.includes('buenas')) {
+            return '¡Hola! 👋 ¿En qué puedo ayudarte hoy? Puedo resolver dudas sobre:<br>• Cursos de Odoo<br>• Planes y precios<br>• Certificaciones<br>• Nuestros profesores<br>• Modalidad de estudio';
+        }
+        
+        if (lowerMessage.includes('gracias')) {
+            return '¡De nada! 😊 ¿Hay algo más en lo que pueda ayudarte? Estoy aquí para resolver todas tus dudas sobre nuestros cursos de Odoo.';
+        }
+        
+        // Respuesta por defecto
+        return '🤔 Interesante pregunta. Te recomiendo contactar directamente a nuestro equipo de soporte para una respuesta más detallada. También puedes revisar nuestra sección de <strong>Preguntas Frecuentes</strong> más abajo. ¿Hay algo más en lo que pueda ayudarte?';
+    }
+    
+    // Efecto de aparecer al hacer scroll
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+            if (!chatbotModal.classList.contains('active')) {
                 mentorBtn.style.opacity = '1';
                 mentorBtn.style.pointerEvents = 'auto';
-            } else {
-                mentorBtn.style.opacity = '0';
-                mentorBtn.style.pointerEvents = 'none';
             }
-        });
-        
-        // Inicialmente oculto
-        mentorBtn.style.opacity = '0';
-        mentorBtn.style.pointerEvents = 'none';
-        mentorBtn.style.transition = 'opacity 0.3s ease';
-    }
+        } else {
+            mentorBtn.style.opacity = '0';
+            mentorBtn.style.pointerEvents = 'none';
+        }
+    });
+    
+    // Inicialmente oculto
+    mentorBtn.style.opacity = '0';
+    mentorBtn.style.pointerEvents = 'none';
+    mentorBtn.style.transition = 'opacity 0.3s ease';
 }
 
 // ========================================
